@@ -1,23 +1,23 @@
-﻿string[] array = { "Jonh", "Bob", "Katrin", "Anastasia" }; // Создаем массив строк
+﻿string[] arraySTR = { "Jonh", "Bob", "Katrin", "Anastasia", "Marvin", "Mia"}; // Создаем массив строк
 int count = 0;
-for (int i = 0; i < array.Length; i++)
+for (byte i = 0; i < arraySTR.Length; i++)
 {
-    if (array[i].Length <= 3) count++;
-    System.Console.WriteLine(array[i]);
+    if (arraySTR[i].Length <= 3) count++;
+    System.Console.WriteLine(arraySTR[i]);
 }
 System.Console.WriteLine();
 
-string[] arrays = new string[count];
+string[] arrayString = new string[count];
 int j = 0;
-for (int i = 0; i < array.Length; i++)
+for (byte i = 0; i < arraySTR.Length; i++)
 {
-    if (array[i].Length <= 3)
+    if (arraySTR[i].Length <= 3)
     {
-        arrays[j] = array[i];
+        arrayString[j] = arraySTR[i];
         j++;
     }
 }
-for (int i = 0; i < arrays.Length; i++)
+for (byte i = 0; i < arrayString.Length; i++)
 {
-    System.Console.WriteLine(arrays[i]);
+    System.Console.WriteLine(arrayString[i]);
 }
